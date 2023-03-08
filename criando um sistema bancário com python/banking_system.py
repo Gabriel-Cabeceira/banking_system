@@ -18,15 +18,15 @@ menu = """
 [q] Sair
 
 """
+
 valor = 0
 saldo = 0
 limite_diario = 500
 total_saques = 0
-extrato = """"""
 num_saques = 0
 LIMITE_SAQUES = 3
 
-
+extrato = """"""
 
 
 ## Código
@@ -38,8 +38,11 @@ while True:
 
     if opcao == "d":
         valor = float(input("Digite o valor que deseja depositar:  "))
-        saldo += valor
-        extrato += f"""R${valor:.2f} C \n"""
+        if valor > 0:
+            saldo += valor
+            extrato += f"""R${valor:.2f} C \n"""
+        else:
+            print("Falha, digite um valor válido!")
 
     elif opcao == "s":
         if num_saques < LIMITE_SAQUES:
@@ -51,12 +54,15 @@ while True:
                 extrato += f"""R${valor:.2f} D \n"""
                 num_saques += 1
                 total_saques += valor
-                print(total_saques)
+                print(f"valor retirado: R${valor:.2f}")
         else:
             print("Limite de Saques excedido!!")
+
     elif opcao == "e":
-        print(f"Seu Saldo atual é de R${saldo:.2f} \n")
-        print(extrato)
+        print(f"*************** EXTRATO *****************\n")
+        print(f"Seu Saldo atual é de R${saldo:.2f}\n")        
+        print(f"{extrato}\n")
+        
 
     elif opcao == "q":
         print("Volte sempre!!\n")
