@@ -8,3 +8,8 @@ Desafio básico onde foi proposto criar um sistema bancário simples em python. 
 ### Otimizando o sistema bancário com funções
 
 Neste desafio foi proposto otimizar o sistema criado anteriormete utilizando funções e outros conceitos como listas, dicionários entre outros aspectos, foi adicionado também a funcionalidade de exigir senha ao realizar login, criar usuários e criar contas podendo se criar mais de uma conta por usuário. Esta é a v2 do código.
+
+
+### Modelando o sistema bancário em POO
+
+Terceira etapa deste desafio onde o sistema foi remodelado utilizando orientação a objetos. Realizando as mesmas tarefas da versão anterior porém com mais praticidade na criação por utilizar os conceitos de orientação a objetos como Herança, Polimorfismo, encapsulamento etc. Esta é a v3 do código.
