@@ -256,6 +256,7 @@ def acessar_conta(cpf):
 
 
 
+
 # Realiza login
 def login():
     global users  # definir a variável global
@@ -341,3 +342,10 @@ def saque(valor, saldo, extrato, num_saques, total_saques):
 
     else:
         print("Saque não autorizado!")
+
+
+
+
+
+
+        

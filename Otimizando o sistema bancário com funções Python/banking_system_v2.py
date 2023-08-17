@@ -3,6 +3,7 @@ import os
 from funcoes import *
 
 
+
 def main():
 
     while True:
@@ -28,3 +29,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
